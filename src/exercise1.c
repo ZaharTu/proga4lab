@@ -17,6 +17,6 @@ int main(int argc,char** argv ){
     else{
         avg = (int)(avg*100 - 0.5)/100.0;
     }
-    printf("%g",avg);
+    printf("%.2f\n",avg);
 
 }
