@@ -10,5 +10,13 @@ int main(int argc,char** argv ){
     for(int i=0; i<10; i++){
         sum += array[i];
     }
-    printf("%.2f\n", (sum+0.005)/10);
+    double avg=sum/10;
+    if(avg >= 0){
+        avg = (int)(avg*100 + 0.5)/100.0;
+    }
+    else{
+        avg = (int)(avg*100 - 0.5)/100.0;
+    }
+    printf("%g",avg);
+
 }
